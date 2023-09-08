@@ -1,0 +1,21 @@
+version: '3'
+services:
+  rabbitmq_3_7_9:
+    image: rabbitmq:3.7.9-management
+    container_name: rabbitmq_3_7_9
+    ports:
+      - "15672:15672"  # Management UI
+      - "5672:5672"    # AMQP port
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  rabbitmq_3_11_18:
+    image: rabbitmq:3.11.18-management
+    container_name: rabbitmq_3_11_18
+    ports:
+      - "15673:15672"  # Management UI
+      - "5673:5672"    # AMQP port
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
