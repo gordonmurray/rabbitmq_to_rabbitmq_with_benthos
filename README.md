@@ -2,9 +2,9 @@
 
 Use the following Docker Compose file which creates a RabbitMQ 3.7.9 container and a Rabbit 3.11.18 container
 
-```
-docker compose up -d
-```
+The following image shows RabbitMQ 3.7.9 on the left and RabbitMQ 3.11.18 on the right after using Benths to move a few messages from source to destination
+
+![RabbitMQ source and destination screenshot](./images/rabbitmq_screenshot.png)
 
 The install Benthos to copy data
 
