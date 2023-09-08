@@ -1,0 +1,11 @@
+input:
+  amqp_0_9:
+    urls: ["amqp://guest:guest@localhost:5672/"]
+    queue: example_queue
+    prefetch_count: 10
+    consumer_tag: benthos_consumer
+
+output:
+  amqp_0_9:
+    urls: ["amqp://guest:guest@localhost:5673/"]
+    exchange: destination_exchange
